@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Expansion_nextDrop</groupId>
+	<artifactId>Expansion_nextDrop</artifactId>
+	<version>1.0</version>
+	<build>
+		<finalName>${project.name} (KP)</finalName>
+		<sourceDirectory>src</sourceDirectory>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<release>16</release>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<repositories>
+		<!-- PlaceholderAPI -->
+		<repository>
+			<id>placeholderapi</id>
+			<url>https://repo.extendedclip.com/content/repositories/placeholderapi/</url>
+		</repository>
+		<!-- Spigot -->
+		<repository>
+			<id>spigot-repo</id>
+			<url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+		</repository>
+	</repositories>
+	<dependencies>
+		<!-- Spigot -->
+		<dependency>
+			<groupId>org.spigotmc</groupId>
+			<artifactId>spigot-api</artifactId>
+			<version>1.20.1-R0.1-SNAPSHOT</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- PlaceholderAPI -->
+		<dependency>
+			<groupId>me.clip</groupId>
+			<artifactId>placeholderapi</artifactId>
+			<version>2.11.5</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- CrazyEnvoys (Importado manualmente) -->
+		<dependency>
+			<groupId>com.badbones69.crazyenvoys</groupId>
+			<artifactId>CrazyEnvoys</artifactId>
+			<version>1.8.2</version>
+		</dependency>
+	</dependencies>
+</project>
